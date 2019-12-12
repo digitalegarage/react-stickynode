@@ -282,7 +282,7 @@ class Sticky extends Component {
         this.delta = delta;
     }
 
-    componentWillReceiveProps (nextProps) {
+    UNSAFE_componentWillReceiveProps (nextProps) {
         this.updateInitialDimension(nextProps);
         this.update();
     }
